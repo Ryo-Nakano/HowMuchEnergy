@@ -9,19 +9,31 @@
 /* Begin PBXBuildFile section */
 		F97488BF2084617600E1EB5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97488BE2084617600E1EB5E /* AppDelegate.swift */; };
 		F97488C12084617600E1EB5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97488C02084617600E1EB5E /* ViewController.swift */; };
-		F97488C42084617600E1EB5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F97488C22084617600E1EB5E /* Main.storyboard */; };
 		F97488C62084617800E1EB5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F97488C52084617800E1EB5E /* Assets.xcassets */; };
 		F97488C92084617800E1EB5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F97488C72084617800E1EB5E /* LaunchScreen.storyboard */; };
+		F97488D5208462EC00E1EB5E /* InputWeight.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F97488D4208462EC00E1EB5E /* InputWeight.storyboard */; };
+		F97488D7208462FB00E1EB5E /* Result.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F97488D6208462FB00E1EB5E /* Result.storyboard */; };
+		F97488DB2084637100E1EB5E /* InputViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97488DA2084637100E1EB5E /* InputViewViewController.swift */; };
+		F97488DD2084637C00E1EB5E /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97488DC2084637C00E1EB5E /* ResultViewController.swift */; };
+		F97488E020846DA600E1EB5E /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F97488DF20846DA600E1EB5E /* Realm.framework */; };
+		F97488E42084744200E1EB5E /* RealmData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97488E32084744200E1EB5E /* RealmData.swift */; };
+		F996480D20848BC8006095AD /* Einstein 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F996480C20848BC8006095AD /* Einstein 2.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F97488BB2084617600E1EB5E /* HowMuchEnergy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HowMuchEnergy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F97488BE2084617600E1EB5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F97488C02084617600E1EB5E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F97488C32084617600E1EB5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F97488C52084617800E1EB5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F97488C82084617800E1EB5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F97488CA2084617800E1EB5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F97488D4208462EC00E1EB5E /* InputWeight.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InputWeight.storyboard; sourceTree = "<group>"; };
+		F97488D6208462FB00E1EB5E /* Result.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Result.storyboard; sourceTree = "<group>"; };
+		F97488DA2084637100E1EB5E /* InputViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewViewController.swift; sourceTree = "<group>"; };
+		F97488DC2084637C00E1EB5E /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		F97488DF20846DA600E1EB5E /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		F97488E32084744200E1EB5E /* RealmData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmData.swift; sourceTree = "<group>"; };
+		F996480C20848BC8006095AD /* Einstein 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Einstein 2.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F97488E020846DA600E1EB5E /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +51,10 @@
 		F97488B22084617600E1EB5E = {
 			isa = PBXGroup;
 			children = (
+				F996480B20848BB8006095AD /* Images */,
 				F97488BD2084617600E1EB5E /* HowMuchEnergy */,
 				F97488BC2084617600E1EB5E /* Products */,
+				F97488DE20846DA600E1EB5E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +70,57 @@
 			isa = PBXGroup;
 			children = (
 				F97488BE2084617600E1EB5E /* AppDelegate.swift */,
+				F97488E22084741D00E1EB5E /* Model */,
+				F97488D92084635000E1EB5E /* ViewControllers */,
+				F97488D82084633B00E1EB5E /* Storyboards */,
 				F97488C02084617600E1EB5E /* ViewController.swift */,
-				F97488C22084617600E1EB5E /* Main.storyboard */,
 				F97488C52084617800E1EB5E /* Assets.xcassets */,
 				F97488C72084617800E1EB5E /* LaunchScreen.storyboard */,
 				F97488CA2084617800E1EB5E /* Info.plist */,
 			);
 			path = HowMuchEnergy;
+			sourceTree = "<group>";
+		};
+		F97488D82084633B00E1EB5E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F97488D4208462EC00E1EB5E /* InputWeight.storyboard */,
+				F97488D6208462FB00E1EB5E /* Result.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F97488D92084635000E1EB5E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F97488DA2084637100E1EB5E /* InputViewViewController.swift */,
+				F97488DC2084637C00E1EB5E /* ResultViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F97488DE20846DA600E1EB5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F97488DF20846DA600E1EB5E /* Realm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F97488E22084741D00E1EB5E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F97488E32084744200E1EB5E /* RealmData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F996480B20848BB8006095AD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F996480C20848BC8006095AD /* Einstein 2.jpg */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +133,7 @@
 				F97488B72084617600E1EB5E /* Sources */,
 				F97488B82084617600E1EB5E /* Frameworks */,
 				F97488B92084617600E1EB5E /* Resources */,
+				F97488E120846E0700E1EB5E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -124,33 +184,48 @@
 			files = (
 				F97488C92084617800E1EB5E /* LaunchScreen.storyboard in Resources */,
 				F97488C62084617800E1EB5E /* Assets.xcassets in Resources */,
-				F97488C42084617600E1EB5E /* Main.storyboard in Resources */,
+				F97488D5208462EC00E1EB5E /* InputWeight.storyboard in Resources */,
+				F996480D20848BC8006095AD /* Einstein 2.jpg in Resources */,
+				F97488D7208462FB00E1EB5E /* Result.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F97488E120846E0700E1EB5E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F97488B72084617600E1EB5E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F97488DB2084637100E1EB5E /* InputViewViewController.swift in Sources */,
 				F97488C12084617600E1EB5E /* ViewController.swift in Sources */,
+				F97488E42084744200E1EB5E /* RealmData.swift in Sources */,
 				F97488BF2084617600E1EB5E /* AppDelegate.swift in Sources */,
+				F97488DD2084637C00E1EB5E /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F97488C22084617600E1EB5E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F97488C32084617600E1EB5E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F97488C72084617800E1EB5E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +357,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GQE4ET95Y4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = HowMuchEnergy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +379,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GQE4ET95Y4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = HowMuchEnergy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
